@@ -1,20 +1,18 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import { Button } from '@mui/material'
+import { Routes, Route } from "react-router-dom";
+
+{ /* importing all the pages */ }
+import Layout from './Layout'
+import HomePage from "./Home/HomePage";
 
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
     <>
-      <div>
-        <p className = "text-red-900">Hello World</p>
-      </div> 
-
-      <Button variant = "contained">
-        Hello
-      </Button>
+      <Routes>
+        <Route path = '/' element = {<Layout/>}>
+          <Route index element = {<HomePage/>}/>
+        
+        </Route>
+      </Routes>
     </>
   )
 }
