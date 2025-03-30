@@ -2,8 +2,8 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Layout from './pages/Layout';
 import LandingPage from './pages/LandingPage';
-import SelectRolePage from "./pages/SelectPage/SelectRole";
-import PatientSignupPage from "./pages/PatientSignup/PatientSignupPage";
+import SelectRolePage from "./pages/SelectRole";
+import PatientSignupPage from "./pages/PatientSignupPage";
 
 
 function App() {
@@ -14,6 +14,7 @@ function App() {
           <Route index element={<LandingPage />} />
           <Route path = "/select-signup" element = {<SelectRolePage/>}/>
           <Route path = "/patient-signup" element = {<PatientSignupPage/>}/>
+
         </Route>
       </Routes>
     </BrowserRouter>

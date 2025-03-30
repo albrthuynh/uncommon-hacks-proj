@@ -5,7 +5,7 @@ function SelectRolePage() {
 
     return (
         <>
-            <div className = "flex flex-row gap-10 w-full h-full justify-center items-center mt-20">
+            <div className = "flex flex-row px-5 gap-10 w-full h-full justify-center items-center mt-20">
                 <SelectCard
                     title = "Patient"
                     icon = {<IoPersonOutline className = "h-45 w-45"/>}

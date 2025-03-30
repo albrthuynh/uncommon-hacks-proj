@@ -24,7 +24,7 @@ function SelectCard({title, icon, description, destination}) {
                                     {icon}
                                 </div>
 
-                                <p className = "text-2xl font-albertsansmedium mt-15 text-center">
+                                <p className = "mx-5 text-2xl font-albertsansmedium mt-15 text-center">
                                     {description}
                                 </p>
                             </div>
