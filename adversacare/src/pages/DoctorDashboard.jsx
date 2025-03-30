@@ -13,9 +13,8 @@ const DoctorDashboard = () => {
     const examplePatients = [{
         name: "Mr. Stupid",
         drugs: [
-            "Ibuprofen",
-            "Levothyroxine",
-            "Prednisone",
+            "ENFUVIRTIDE",
+            "VALCYTE",
         ]
     },
     {

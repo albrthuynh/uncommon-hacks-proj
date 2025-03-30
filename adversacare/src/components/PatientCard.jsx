@@ -20,11 +20,23 @@ const Transition = React.forwardRef(function Transition(props, ref) {
     return <Slide direction="up" ref={ref} {...props} />;
   });
 
-const PatientCard = ({doctor, style, danger=true}) => {
+const PatientCard = ({doctor, style, danger=false}) => {
+
+    const [images, setImages] = React.useState([]);
     const [open, setOpen] = React.useState(false);
 
-    const handleClickOpen = () => {
+    const handleClickOpen = async () => {
       setOpen(true);
+
+      const queryParams = doctor.drugs.map(d => `q=${encodeURIComponent(d)}`).join("&");
+
+      try {
+        const response = await fetch(`http://127.0.0.1:5000/?${queryParams}`);
+        const data = await response.json();
+        setImages(data);
+      } catch (error) {
+        console.error("Failed to fetch plot data", error);
+      }
     };
   
     const handleClose = () => {
@@ -69,7 +81,7 @@ const PatientCard = ({doctor, style, danger=true}) => {
             </Button>
           </Toolbar>
         </AppBar>
-        <List>
+        {/* <List>
           <ListItemButton>
             <ListItemText primary="Phone ringtone" secondary="Titania" />
           </ListItemButton>
@@ -80,7 +92,20 @@ const PatientCard = ({doctor, style, danger=true}) => {
               secondary="Tethys"
             />
           </ListItemButton>
-        </List>
+        </List> */}
+        
+        <div style={{ padding: '2rem' }}>
+        {images.map((img, i) => (
+          <div key={i} style={{ marginBottom: '2rem' }}>
+            <h3>{img.type.toUpperCase()}</h3>
+            <img
+              src={`data:image/png;base64,${img.base64}`}
+              alt={img.type}
+              style={{ maxWidth: '100%', borderRadius: '8px', boxShadow: '0 2px 10px rgba(0,0,0,0.1)' }}
+            />
+          </div>
+        ))}
+        </div>
       </Dialog>                
                 {doctor.drugs.map((drug) => (
                     <div className="ml-10 mt-2 flex-col content-center bg-offwhite shadow-lg rounded-2xl w-90 h-15">
