@@ -14,7 +14,7 @@ const DoctorDashboard = () => {
         name: "Mr. Stupid",
         drugs: [
             "ENFUVIRTIDE",
-            "INDOCIN I.V.",
+            "VALCYTE",
         ]
     },
     {
