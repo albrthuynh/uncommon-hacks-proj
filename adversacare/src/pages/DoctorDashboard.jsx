@@ -13,33 +13,29 @@ const DoctorDashboard = () => {
     const examplePatients = [{
         name: "Raven Carey",
         drugs: [
-            "HALDOL",
-            "AMPICILLIN",
+            "ENFUVIRTIDE",
+            "VALCYTE",
         ]
     },
     {
         name: "Brian Mueller",
         drugs: [
-            "DIOVAN",
-            "CLARITIN",
+            "DURAGESIC-100",
+            "VELCADE",
         ]
     },
     {
         name: "Sky Tucker",
         drugs: [
-            "PROGRAF",
-            "METHYLPREDNISOLONE",
+            "FLUOXETINE",
+            "PHENELZINE",
         ]
     },
     {
         name: "Roman Peck",
         drugs: [
-            "HALDOL",
-            "FLUNITRAZEPAM",
-            "DIAMORPHINE",
-            "LEVOMETHADONE",
-            "BIFERIDEN",
-            "LORAZEPAM",
+            "IBUPROFEN",
+            "BENLYSTA",
         ]
     }
     ]
