@@ -5,6 +5,7 @@ import LandingPage from './pages/LandingPage';
 import SelectRolePage from "./pages/SelectRole";
 import PatientSignupPage from "./pages/PatientSignupPage";
 import PatientDashboard from "./pages/PatientDashboard";
+import DoctorDashboard from "./pages/DoctorDashboard"
 
 function App() {
   return (
@@ -15,6 +16,8 @@ function App() {
           <Route path = "/select-signup" element = {<SelectRolePage/>}/>
           <Route path = "/patient-signup" element = {<PatientSignupPage/>}/>
           <Route path = "/patient-dashboard" element = {<PatientDashboard/>}/>
+          <Route path = "/doctor-dashboard" element = {<DoctorDashboard/>}/>
+
         </Route>
       </Routes>
     </BrowserRouter>

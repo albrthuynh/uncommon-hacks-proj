@@ -46,7 +46,7 @@ function NavigationBar() {
                         <div className=''>
                             <h1>Hello there, <span className='font-bold'>[insert name here]</span></h1>
                         </div>
-                        <div className='mr-4'>
+                        <div className='mr-10'>
                             <IconButton
                                 size="large"
                                 aria-label="account of current user"
