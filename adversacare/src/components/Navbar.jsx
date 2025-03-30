@@ -1,5 +1,5 @@
-import Logo from "../../Logo/adversaCareLogo.png";
-import testLogo from "../../Logo/smallLogo.png";
+import Logo from "../assets/Logo/adversaCareLogo.png";
+import testLogo from "../assets/Logo/smallLogo.png";
 import { Link } from "react-router-dom";
 
 function NavigationBar() {

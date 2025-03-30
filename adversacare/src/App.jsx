@@ -2,7 +2,7 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Layout from './pages/Layout';
 import LandingPage from './pages/LandingPage';
-import SelectRolePage from "./pages/SelectPage/SelectRole";
+import SelectRolePage from "./pages/SelectRole";
 
 function App() {
   return (
