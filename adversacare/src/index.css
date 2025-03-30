@@ -1,2 +1,11 @@
 @import "tailwindcss";
-/* @import "@material-tailwind/react/tailwind.css"; */
+
+@font-face {
+    font-family: Albert_Sans;
+    src: url("../src/assets/Albert_Sans/static/AlbertSans-Black.ttf");
+}
+
+@theme {
+    --font-albertsans: Albert_Sans, "sans-serif"
+}
+

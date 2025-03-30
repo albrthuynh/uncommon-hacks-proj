@@ -5,7 +5,7 @@ import Button from '@mui/material/Button';
 const LandingPage = () => {
     return (
         <div className='bg-red-500'>
-            <p>test</p>
+            <p className='font-albertsans'>test</p>
         </div>
     )
 }
