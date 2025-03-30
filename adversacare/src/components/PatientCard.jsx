@@ -74,7 +74,7 @@ const PatientCard = ({doctor, style, danger=false}) => {
               <CloseIcon />
             </IconButton>
             <Typography sx={{ ml: 2, flex: 1 }} variant="h6" component="div">
-              Sound
+              Dashboard 
             </Typography>
             <Button autoFocus color="inherit" onClick={handleClose}>
               save
@@ -94,17 +94,17 @@ const PatientCard = ({doctor, style, danger=false}) => {
           </ListItemButton>
         </List> */}
         
-        <div style={{ padding: '2rem' }}>
-        {images.map((img, i) => (
-          <div key={i} style={{ marginBottom: '2rem' }}>
-            <h3>{img.type.toUpperCase()}</h3>
-            <img
-              src={`data:image/png;base64,${img.base64}`}
-              alt={img.type}
-              style={{ maxWidth: '100%', borderRadius: '8px', boxShadow: '0 2px 10px rgba(0,0,0,0.1)' }}
-            />
-          </div>
-        ))}
+        <div style={{ padding: '2rem' }} className = "flex flex-col w-full h-full items-center justify-center mt-[900px]">
+          {images.map((img, i) => (
+            <div key={i} style={{ marginBottom: '2rem' }}>
+              <h3>{img.type.toUpperCase()}</h3>
+              <img
+                src={`data:image/png;base64,${img.base64}`}
+                alt={img.type}
+                style={{ maxWidth: '100%', borderRadius: '8px', boxShadow: '0 2px 10px rgba(0,0,0,0.1)' }}
+              />
+            </div>
+          ))}
         </div>
       </Dialog>                
                 {doctor.drugs.map((drug) => (
