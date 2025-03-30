@@ -23,14 +23,15 @@ function NavigationBar() {
                         <Link
                             to="/sign-in"
                             title="Login"
-                            className="px-5 py-2 text-base font-light font-poppins text-gray-900 bg-transparent border border-gray-900 rounded-xl hover:bg-gray-900 hover:text-white focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-900"
+                            className="px-5 py-2 text-base font-light font-albertsans text-gray-900 bg-transparent border border-gray-900 rounded-xl hover:bg-gray-900 hover:text-white focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-900"
                         >
                             Log In
                         </Link>
                         <Link
                             to="/sign-up"
                             title="Sign Up"
-                            className="px-5 py-2 text-base font-light font-poppins text-black bg-customGreen rounded-xl bg-blue-600 hover:bg-gray-300 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:bg-blue-600"
+
+                            className="px-5 py-2 text-base font-light font-albertsans text-black bg-customGreen rounded-xl bg-blue-600 hover:bg-gray-300 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-green-600"
                         >
                             Sign Up
                         </Link>

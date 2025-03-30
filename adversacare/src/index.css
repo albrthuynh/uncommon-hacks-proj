@@ -1,12 +1,18 @@
 @import "tailwindcss";
 
 @font-face {
-    font-family: Albert_Sans;
+    font-family: Albert_Sans_Medium;
     src: url("../src/assets/Albert_Sans/static/AlbertSans-Medium.ttf");
 }
 
+@font-face {
+    font-family: Albert_Sans_Light;
+    src: url("../src/assets/Albert_Sans/static/AlbertSans-Light.ttf");
+}
+
 @theme {
-    --font-albertsans: Albert_Sans, "sans-serif";
+    --font-albertsansmedium: Albert_Sans_Medium, "sans-serif";
+    --font-albertsanslight: Albert_Sans_Light, "sans-serif";
     --color-accent: #145c93;
     --color-offblack: #051014;
     --color-background: #e3e6f0;
