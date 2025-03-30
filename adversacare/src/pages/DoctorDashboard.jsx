@@ -25,13 +25,6 @@ const DoctorDashboard = () => {
         ]
     },
     {
-        name: "Sky Tucker",
-        drugs: [
-            "FLUOXETINE",
-            "PHENELZINE",
-        ]
-    },
-    {
         name: "Roman Peck",
         drugs: [
             "IBUPROFEN",
