@@ -1,23 +1,24 @@
 import Logo from "../../Logo/adversaCareLogo.png";
+import testLogo from "../../Logo/smallLogo.png";
 import { Link } from "react-router-dom";
 
 function NavigationBar() {
     return (
         <>
-            <header>
+            <header className = "flex flex-row py-4 justify-between bg-white shadow">
                 {/* Logo */}
-                <div className="flex-shrink-0">
+                <div className="ml-10 flex-shrink-0">
                     <Link to="/" title="Akknoledge Careers" className="flex rounded">
                         <img
-                        className="w-auto h-11"
-                        src={Logo}
+                        className="w-full h-[50px]"
+                        src={testLogo}
                         alt="AdversaCareLogo"
                         />
                     </Link>
                 </div>
 
                 {/* Right: Profile or Sign In/Up */}
-                <div className="flex items-center space-x-4">
+                <div className="flex items-center space-x-4 mr-10">
                     <>
                         <Link
                             to="/sign-in"
@@ -29,7 +30,7 @@ function NavigationBar() {
                         <Link
                             to="/sign-up"
                             title="Sign Up"
-                            className="px-5 py-2 text-base font-light font-poppins text-black bg-customGreen rounded-xl hover:bg-green-300 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-green-600"
+                            className="px-5 py-2 text-base font-light font-poppins text-black bg-customGreen rounded-xl bg-blue-600 hover:bg-gray-300 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-green-600"
                         >
                             Sign Up
                         </Link>
