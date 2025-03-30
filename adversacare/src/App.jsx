@@ -8,6 +8,8 @@ import PatientDashboard from "./pages/PatientDashboard";
 import DoctorDashboard from "./pages/DoctorDashboard"
 
 function App() {
+
+
   return (
     <BrowserRouter>
       <Routes>
@@ -16,6 +18,7 @@ function App() {
           <Route path = "/select-signup" element = {<SelectRolePage/>}/>
           <Route path = "/patient-signup" element = {<PatientSignupPage/>}/>
           <Route path = "/patient-dashboard" element = {<PatientDashboard/>}/>
+          <Route path = "/doctor-dashboard" element = {<DoctorDashboard/>}/>
           <Route path = "/doctor-dashboard" element = {<DoctorDashboard/>}/>
 
         </Route>

@@ -6,8 +6,12 @@ import LoginButtons from "./LoginButtons";
 import { useLocation } from "react-router-dom";
 import { IconButton, Menu, MenuItem, Avatar, Typography} from '@mui/material';
 import AccountCircle from '@mui/icons-material/AccountCircle';
+import { useAuth0 } from "@auth0/auth0-react";
 
 function NavigationBar() {
+    const { logout } = useAuth0();
+    const { user, isAuthenticated, isLoading } = useAuth0();
+
     const {pathname} = useLocation();
     const [auth, setAuth] = React.useState(false);
 
@@ -44,7 +48,11 @@ function NavigationBar() {
                 {pathname.includes('dashboard') && (
                     <div className='flex items-center'>
                         <div className=''>
-                            <h1>Hello there, <span className='font-bold'>[insert name here]</span></h1>
+                        {isAuthenticated && (
+                            <div>
+                                <h1>Hello there, {user.name}</h1>
+                            </div>
+                            )}
                         </div>
                         <div className='mr-10'>
                             <IconButton
@@ -55,7 +63,9 @@ function NavigationBar() {
                                 onClick={handleMenu}
                                 color="inherit"
                             >
-                                <Avatar alt="Remy Sharp" src="../assets/avatar.png" />
+                            {isAuthenticated && (
+                                <Avatar alt="Remy Sharp" src={user.picture} />
+                            )}
                             </IconButton>
                             <Menu
                                 id="menu-appbar"
@@ -72,8 +82,7 @@ function NavigationBar() {
                                 open={Boolean(anchorEl)}
                                 onClose={handleClose}
                             >
-                                <MenuItem onClick={handleClose}>Profile</MenuItem>
-                                <MenuItem onClick={handleClose}>My account</MenuItem>
+                                <MenuItem onClick={() => logout({ logoutParams: { returnTo: window.location.origin } })}>Logout</MenuItem>
                             </Menu>
                         </div>
                     </div>
