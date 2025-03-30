@@ -161,7 +161,7 @@ function renderComponent(currStep) {
 function SliderComponent() {
     const [step, setStep] = useState(0);
     return (
-        <div className = " mt-10">
+        <div className = "mt-10">
             <Box sx={{ width: '100%' }}>
                 <Stepper activeStep={step} alternativeLabel>
                     {steps.map((label) => (
@@ -172,7 +172,7 @@ function SliderComponent() {
                 </Stepper>
             </Box>
 
-            <div className = "text-center font-albertsansmedium">
+            <div className = "text-center font-albertsansmedium mt-5">
                 <p className = "text-xl">Steps {step + 1}/3</p>
             </div>
 
@@ -180,7 +180,7 @@ function SliderComponent() {
                {renderComponent(step)} 
             </div>
 
-            <div className = "flex flex-row justify-between mt-10 px-10">
+            <div className = "flex flex-row justify-between mt-10 px-10 font-albertsansmedium">
                     <Button
                         variant='contained' 
                         sx ={{
