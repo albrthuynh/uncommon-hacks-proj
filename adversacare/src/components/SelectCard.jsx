@@ -5,10 +5,10 @@ import Button from '@mui/material/Button';
 import Typography from '@mui/material/Typography';
 import { Link } from 'react-router-dom';
 
-function SelectCard({title, icon, description, destination}) {
+function SelectCard({title, icon, description, destination, onClick}) {
     return (
         <>
-            <Link to = {destination}>
+            <Link to = {destination} onClick={onClick}>
                 <div className = "h-full flex flex-row justify-between w-full hover:scale-[1.02] transition-transform duration-200 ">
                     <Card 
                         className = "flex flex-col py-10 gap-y-10 max-w-2xl h-full shadow-xl"
@@ -24,7 +24,7 @@ function SelectCard({title, icon, description, destination}) {
                                     {icon}
                                 </div>
 
-                                <p className = "text-2xl font-albertsansmedium mt-15 text-center">
+                                <p className = "mx-5 text-2xl font-albertsansmedium mt-15 text-center">
                                     {description}
                                 </p>
                             </div>

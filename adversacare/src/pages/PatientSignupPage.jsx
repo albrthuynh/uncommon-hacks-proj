@@ -1,4 +1,4 @@
-import SliderComponent from "./components/Slider"
+import SliderComponent from "../components/Slider"
 
 function PatientSignupPage() {
     return (
