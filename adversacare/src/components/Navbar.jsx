@@ -42,36 +42,42 @@ function NavigationBar() {
                 <LoginButtons/>
                 
                 {pathname.includes('dashboard') && (
-                    <div className='mr-4'>
-                        <IconButton
-                            size="large"
-                            aria-label="account of current user"
-                            aria-controls="menu-appbar"
-                            aria-haspopup="true"
-                            onClick={handleMenu}
-                            color="inherit"
-                        >
-                            <Avatar alt="Remy Sharp" src="../assets/avatar.png" />
-                        </IconButton>
-                        <Menu
-                            id="menu-appbar"
-                            anchorEl={anchorEl}
-                            anchorOrigin={{
-                            vertical: 'bottom',
-                            horizontal: 'right',
-                            }}
-                            keepMounted
-                            transformOrigin={{
-                            vertical: 'top',
-                            horizontal: 'right',
-                            }}
-                            open={Boolean(anchorEl)}
-                            onClose={handleClose}
-                        >
-                            <MenuItem onClick={handleClose}>Profile</MenuItem>
-                            <MenuItem onClick={handleClose}>My account</MenuItem>
-                        </Menu>
+                    <div className='flex items-center'>
+                        <div className=''>
+                            <h1>Hello there, <span className='font-bold'>[insert name here]</span></h1>
+                        </div>
+                        <div className='mr-4'>
+                            <IconButton
+                                size="large"
+                                aria-label="account of current user"
+                                aria-controls="menu-appbar"
+                                aria-haspopup="true"
+                                onClick={handleMenu}
+                                color="inherit"
+                            >
+                                <Avatar alt="Remy Sharp" src="../assets/avatar.png" />
+                            </IconButton>
+                            <Menu
+                                id="menu-appbar"
+                                anchorEl={anchorEl}
+                                anchorOrigin={{
+                                vertical: 'bottom',
+                                horizontal: 'right',
+                                }}
+                                keepMounted
+                                transformOrigin={{
+                                vertical: 'top',
+                                horizontal: 'right',
+                                }}
+                                open={Boolean(anchorEl)}
+                                onClose={handleClose}
+                            >
+                                <MenuItem onClick={handleClose}>Profile</MenuItem>
+                                <MenuItem onClick={handleClose}>My account</MenuItem>
+                            </Menu>
+                        </div>
                     </div>
+                    
                 )}
             </header>
         </>

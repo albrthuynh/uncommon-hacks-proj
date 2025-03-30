@@ -14,7 +14,7 @@ function App() {
           <Route index element={<LandingPage />} />
           <Route path = "/select-signup" element = {<SelectRolePage/>}/>
           <Route path = "/patient-signup" element = {<PatientSignupPage/>}/>
-          <Route path = "/dashboard" element = {<PatientDashboard/>}/>
+          <Route path = "/patient-dashboard" element = {<PatientDashboard/>}/>
         </Route>
       </Routes>
     </BrowserRouter>
