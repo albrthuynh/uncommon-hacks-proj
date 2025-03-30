@@ -1,6 +1,6 @@
 import avatar from "../assets/avatar.png"
 
-const PrescriptionCard = ({doctor, style}) => {
+const DoctorCard = ({doctor, style}) => {
 
     return (
         <div>
@@ -23,6 +23,8 @@ const PrescriptionCard = ({doctor, style}) => {
                         </div>
                     </div>
                 ))}
+                
+                
             </div>
             
         </div>
@@ -30,4 +32,4 @@ const PrescriptionCard = ({doctor, style}) => {
     )
 }
 
-export default PrescriptionCard
+export default DoctorCard
