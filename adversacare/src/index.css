@@ -2,10 +2,16 @@
 
 @font-face {
     font-family: Albert_Sans;
-    src: url("../src/assets/Albert_Sans/static/AlbertSans-Black.ttf");
+    src: url("../src/assets/Albert_Sans/static/AlbertSans-Medium.ttf");
 }
 
 @theme {
     --font-albertsans: Albert_Sans, "sans-serif"
+}
+
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;  
 }
 
