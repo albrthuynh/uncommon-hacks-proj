@@ -8,7 +8,7 @@ import SendIcon from '@mui/icons-material/Send';
 
 const PatientDashboard = () => {
     const exampleDoctors = [{
-        name: "Dr. Blahblahblah",
+        name: "Dr. Mackomma",
         specialty: "Dentistry",
         drugs: [
             "Ibuprofen",
@@ -17,7 +17,7 @@ const PatientDashboard = () => {
         ]
     },
     {
-        name: "Dr. Waaaaaah",
+        name: "Dr. Smith",
         specialty: "Dentistry",
         drugs: [
             "DURAGESIC-100",
@@ -25,7 +25,7 @@ const PatientDashboard = () => {
         ]
     },
     {
-        name: "Dr. Waaaaaah",
+        name: "Dr. Charles",
         specialty: "Dentistry",
         drugs: [
             "DURAGESIC-100",
@@ -33,7 +33,7 @@ const PatientDashboard = () => {
         ]
     },
     {
-        name: "Dr. Waaaaaah",
+        name: "Dr. Gault",
         specialty: "Dentistry",
         drugs: [
             "DURAGESIC-100",
