@@ -28,7 +28,7 @@ function NavigationBar() {
                             Log In
                         </Link>
                         <Link
-                            to="/sign-up"
+                            to="/select-signup"
                             title="Sign Up"
 
                             className="px-5 py-2 text-base font-light font-albertsans text-black bg-customGreen rounded-xl bg-blue-600 hover:bg-gray-300 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-green-600"

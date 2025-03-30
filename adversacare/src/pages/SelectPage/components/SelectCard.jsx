@@ -3,38 +3,38 @@ import CardActions from '@mui/material/CardActions';
 import CardContent from '@mui/material/CardContent';
 import Button from '@mui/material/Button';
 import Typography from '@mui/material/Typography';
+import { Link } from 'react-router-dom';
 
-function SelectCard() {
+function SelectCard({title, icon, description, destination}) {
     return (
         <>
-            <Card className = "border border-red max-h-[275px]">
-                <CardContent>
-                    <Typography gutterBottom className = "font-albertsanslight" sx={{ color: 'text.secondary', fontSize: 14 }}>
-                    Word of the Day
-                    </Typography>
-                    
-                    <Typography sx={{ color: 'text.secondary', mb: 1.5 }}>adjective</Typography>
-                    <Typography className = "font-albertsansmedium text-2xl" variant="body2">
-                    well meaning and kindly.
-                    <br />
-                    {'"a benevolent smile"'}
-                    </Typography>
+            <Link to = {destination}>
+                <div className = "h-full flex flex-row justify-between w-full hover:scale-[1.02] transition-transform duration-200 ">
+                    <Card 
+                        className = "flex flex-col py-10 gap-y-10 max-w-2xl h-full shadow-xl"
+                        sx={{ boxShadow: 10, borderRadius: '40px', minHeight: '500px' }}
+                    >
+                        <CardContent className = "flex flex-col ">
+                            <div className = "flex flex-col gap-y-10">
+                                <h1 className = " text-4xl text-center font-albertsansbold">
+                                    {title}
+                                </h1>
 
-                    <p className='font-albertsansmedium text-3xl'>
-                        testing data 
-                    </p>
+                                <div className = "flex w-full justify-center items-center">
+                                    {icon}
+                                </div>
 
-                    <p className='font-albertsanslight text-2xl'>
-                        Testing data
-                    </p>
-                </CardContent>
-                <CardActions>
-                    <Button size="small">Learn More</Button>
-                </CardActions>
-            </Card> 
+                                <p className = "text-2xl font-albertsansmedium mt-15 text-center">
+                                    {description}
+                                </p>
+                            </div>
+                        </CardContent>
+                    </Card>
+                </div>
+            </Link>
+            
         </>
     ) 
-        
 }
 
 export default SelectCard;
