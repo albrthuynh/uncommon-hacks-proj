@@ -1,4 +1,4 @@
-import SelectCard from "./components/SelectCard";
+import SelectCard from "../components/SelectCard";
 import { BiHealth } from "react-icons/bi";
 import {IoPersonOutline} from "react-icons/io5";
 function SelectRolePage() {
