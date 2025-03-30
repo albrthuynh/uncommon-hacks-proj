@@ -6,6 +6,12 @@
 }
 
 @theme {
-    --font-albertsans: Albert_Sans, "sans-serif"
+    --font-albertsans: Albert_Sans, "sans-serif";
+    --color-accent: #145c93;
+    --color-offblack: #051014;
+    --color-background: #e3e6f0;
+    --color-offwhite: #fafafa;
+    --color-goodgreen: #519872;
+    --color-badred: #db5461;
 }
 
