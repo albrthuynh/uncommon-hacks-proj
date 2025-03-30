@@ -2,7 +2,7 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Layout from './pages/Layout';
 import LandingPage from './pages/LandingPage';
-import SelectPage from "./pages/SelectPage/SelectPage";
+import SelectRolePage from "./pages/SelectPage/SelectRole";
 
 function App() {
   return (
@@ -10,7 +10,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Layout />}>
           <Route index element={<LandingPage />} />
-          <Route path = "/select-signup" element = {<SelectPage/>}/>
+          <Route path = "/select-signup" element = {<SelectRolePage/>}/>
         </Route>
       </Routes>
     </BrowserRouter>
