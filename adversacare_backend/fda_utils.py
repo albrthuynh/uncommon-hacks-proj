@@ -5,11 +5,14 @@ import squarify
 import io
 import base64
 import os
+import matplotlib
 from matplotlib import font_manager
 from collections import Counter
 import requests
 import numpy as np
 import re
+
+matplotlib.use('agg')
 
 # === FDA API URL Constructor ===
 def create_url(query_list, base_url, api_key, filter_category, query_limit=1000):
