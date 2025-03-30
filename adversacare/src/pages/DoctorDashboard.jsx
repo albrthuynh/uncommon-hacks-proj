@@ -14,32 +14,32 @@ const DoctorDashboard = () => {
         name: "Mr. Stupid",
         drugs: [
             "ENFUVIRTIDE",
-            "VALCYTE",
+            "INDOCIN I.V.",
         ]
     },
     {
         name: "Mrs. Dumb",
         drugs: [
-            "Levothyroxine",
-            "Levothyroxine",
+            "DURAGESIC-100",
+            "INDOCIN I.V.",
         ]
     },
     {
         name: "Prof. Waaaaaah",
         drugs: [
-            "Levothyroxine",
-            "Levothyroxine",
+            "DURAGESIC-100",
+            "INDOCIN I.V.",
         ]
     },
     {
         name: "Prof. asldkfjasd;lkfj;da",
         drugs: [
-            "Levothyroxine",
-            "Levothyroxine",
-            "Levothyroxine",
-            "Levothyroxine",
-            "Levothyroxine",
-            "Levothyroxine",
+            "DURAGESIC-100",
+            "INDOCIN I.V.",
+            "DOPAMINE HCL",
+            "CLOZARIL",
+            "LAMISIL",
+            "DIOVAN",
         ]
     }
     ]

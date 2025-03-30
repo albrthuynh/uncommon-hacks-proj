@@ -12,7 +12,7 @@ const PatientDashboard = () => {
         specialty: "Dentistry",
         drugs: [
             "Ibuprofen",
-            "Levothyroxine",
+            "DURAGESIC-100",
             "Prednisone",
         ]
     },
@@ -20,24 +20,24 @@ const PatientDashboard = () => {
         name: "Dr. Waaaaaah",
         specialty: "Dentistry",
         drugs: [
-            "Levothyroxine",
-            "Levothyroxine",
+            "DURAGESIC-100",
+            "DURAGESIC-100",
         ]
     },
     {
         name: "Dr. Waaaaaah",
         specialty: "Dentistry",
         drugs: [
-            "Levothyroxine",
-            "Levothyroxine",
+            "DURAGESIC-100",
+            "DURAGESIC-100",
         ]
     },
     {
         name: "Dr. Waaaaaah",
         specialty: "Dentistry",
         drugs: [
-            "Levothyroxine",
-            "Levothyroxine",
+            "DURAGESIC-100",
+            "DURAGESIC-100",
         ]
     },
     
