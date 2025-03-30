@@ -9,7 +9,7 @@ createRoot(document.getElementById('root')).render(
     domain="dev-fuj3ts5ye0n7toqw.us.auth0.com"
     clientId="wWZcMkxu03QXb0dFfIax51TCw61hqRmF"
     authorizationParams={{
-      redirect_uri: 'http://localhost:5173/doctor-dashboard'
+      redirect_uri: 'https://adversacare.olympicene.dev/doctor-dashboard'
     }}
   >
     <App />
