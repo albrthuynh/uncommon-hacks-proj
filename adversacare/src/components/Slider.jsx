@@ -6,6 +6,7 @@ import StepLabel from '@mui/material/StepLabel';
 import TextField from '@mui/material/TextField';
 import { Button } from '@mui/material';
 import { useState } from "react"
+import { redirect, useNavigate } from 'react-router-dom';
 
 const steps = [
   'Basic Information',
@@ -142,24 +143,35 @@ function Step3Component() {
     )
 }
 
-// rendering the component based off what step it is
-function renderComponent(currStep) {
-    if (currStep == 0) {
-        return <Step1Component/>;
-    }
-    else if(currStep == 1) {
-        return <Step2Component/>;
-    }
-    else if(currStep == 2){
-        return <Step3Component/>;
-    }
-    else {
-        return <p>Unknown Component</p>
-    }
-}
+
 
 function SliderComponent() {
+    const navigate = useNavigate();
     const [step, setStep] = useState(0);
+
+    // rendering the component based off what step it is
+    function renderComponent(currStep) {
+        if (currStep == 0) {
+            return <Step1Component/>;
+        }
+        else if(currStep == 1) {
+            return <Step2Component/>;
+        }
+        else if(currStep == 2){
+            return <Step3Component/>;
+        }
+        else if( currStep < 0 ) {
+            setStep(0);
+        }
+        else if (currStep > 2 ) {
+            navigate('/patient-dashboard');
+            return null;
+        }
+        else {
+            return <p>Unknown Component</p>
+        }
+    }
+
     return (
         <div className = "mt-10">
             <Box sx={{ width: '100%' }}>

@@ -11,35 +11,35 @@ const DoctorDashboard = () => {
     
 
     const examplePatients = [{
-        name: "Mr. Stupid",
+        name: "Raven Carey",
         drugs: [
-            "ENFUVIRTIDE",
-            "INDOCIN I.V.",
+            "HALDOL",
+            "AMPICILLIN",
         ]
     },
     {
-        name: "Mrs. Dumb",
+        name: "Brian Mueller",
         drugs: [
-            "DURAGESIC-100",
-            "INDOCIN I.V.",
-        ]
-    },
-    {
-        name: "Prof. Waaaaaah",
-        drugs: [
-            "DURAGESIC-100",
-            "INDOCIN I.V.",
-        ]
-    },
-    {
-        name: "Prof. asldkfjasd;lkfj;da",
-        drugs: [
-            "DURAGESIC-100",
-            "INDOCIN I.V.",
-            "DOPAMINE HCL",
-            "CLOZARIL",
-            "LAMISIL",
             "DIOVAN",
+            "CLARITIN",
+        ]
+    },
+    {
+        name: "Sky Tucker",
+        drugs: [
+            "PROGRAF",
+            "METHYLPREDNISOLONE",
+        ]
+    },
+    {
+        name: "Roman Peck",
+        drugs: [
+            "HALDOL",
+            "FLUNITRAZEPAM",
+            "DIAMORPHINE",
+            "LEVOMETHADONE",
+            "BIFERIDEN",
+            "LORAZEPAM",
         ]
     }
     ]
