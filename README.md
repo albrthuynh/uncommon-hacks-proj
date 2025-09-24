@@ -241,16 +241,6 @@ Built with ❤️ by the AdversaCares team for making healthcare data accessible
 
 ---
 
-## 📞 Support
-
-Having issues? We're here to help!
-
-- 📧 **Email**: support@adversacares.com
-- 💬 **Issues**: [GitHub Issues](https://github.com/albrthuynh/uncommon-hacks-proj/issues)
-- 📖 **Documentation**: [Wiki](https://github.com/albrthuynh/uncommon-hacks-proj/wiki)
-
----
-
 <div align="center">
   
   **Made with 💊 for better healthcare decisions**
